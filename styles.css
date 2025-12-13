@@ -67,7 +67,6 @@ footer {
     margin-top: 20px; 
 }
 
-/* ¡ESTILOS QUE OBLIGATORIAMENTE FUNCIONAN! */
 .multimedia {
     display: flex !important;
     flex-direction: column !important;
@@ -79,8 +78,7 @@ footer {
     max-width: 320px !important;
 }
 
-.multimedia img, 
-.multimedia video {
+.multimedia img, .multimedia video {
     width: 300px !important;
     height: 200px !important;
     max-width: 300px !important;
@@ -89,3 +87,4 @@ footer {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
     display: block !important;
 }
+
