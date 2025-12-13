@@ -1,10 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>Página de Prueba</title>
-    </head>
-    <body>
-        <h1>Bienvenidos al Desarrollo Web</h1>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea Semana3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Primera pagina Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="inicio">
+            <article>
+                <h2>Introducción</h2>
+                <p>Esta es una <strong>página de prueba</em> con elementos HTML5 semánticos.</p>
+                <h3>Contenido principal</h3>
+                <p>Usamos <em>etiquetas semánticas</strong> para mejor estructura.</p>
+            </article>
+            
+            <section>
+                <h3>Multimedia</h3>
+                <div class="multimedia">
+                    <img width="500" src="assets/img/imagen1.jpg" alt="Descripción de la imagen">
+                    <video width="500" controls>
+                        <source src="assets/video/video1.mp4" type="video/mp4">
+                        Tu navegador no soporta video HTML5.
+                    </video>
+                </div>
+            </section>
+            
+            <section>
+                <h3>Listas</h3>
+                <p>Lista ordenada:</p>
+                <ol>
+                    <li>linea 1</li>
+                    <li>linea 2</li>
+                    <li>linea 3</li>
+                </ol>
+                <p>Lista desordenada:</p>
+                <ul>
+                    <li>Punto A</li>
+                    <li>Punto B</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h3>Tabla de ejemplo</h3>
+                <table>
+                    <thead>
+                        <tr><th>Columna 1</th><th>Columna 2</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Serie 1</td><td>Dato A</td></tr>
+                        <tr><td>Serie 2</td><td>Dato B</td></tr>
+                        <tr><td>Serie 3</td><td>Dato C</td></tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <section>
+                <h3>Formulario de contacto</h3>
+                <form>
+                    <label>Nombre: <input type="text" name="nombre"></label><br>
+                    <label>Correo: <input type="email" name="correo"></label><br>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+            
+            <p>Enlace externo: <a href="https://admision.uea.edu.ec/inscripciones/" target="_blank">Universidad Estatal Amazónica</a></p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Mi Primera Página Web</p>
+    </footer>
+</body>
 </html>
