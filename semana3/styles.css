@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 20px; 
+    background-color: #f4f4f4; 
+    color: #333; 
+}
+
+header { 
+    background-color: #007bff; 
+    color: white; 
+    padding: 20px; 
+    text-align: center; 
+}
+
+h1 { color: #fff; }
+h2 { color: #0056b3; }
+h3 { color: #007bff; }
+
+table { 
+    border-collapse: collapse; 
+    width: 100%; 
+    margin: 20px 0; 
+}
+
+th, td { 
+    border: 1px solid #ddd; 
+    padding: 8px; 
+    text-align: left; 
+}
+
+th { 
+    background-color: #007bff; 
+    color: white; 
+}
+
+form { 
+    background: white; 
+    padding: 20px; 
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+}
+
+input, button { 
+    margin: 5px 0; 
+    padding: 8px; 
+    width: 100%; 
+    max-width: 300px; 
+}
+
+button { 
+    background-color: #28a745; 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+}
+
+footer { 
+    background-color: #333; 
+    color: white; 
+    text-align: center; 
+    padding: 10px; 
+    margin-top: 20px; 
+}
+
+/* ¡ESTILOS QUE OBLIGATORIAMENTE FUNCIONAN! */
+.multimedia {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 20px !important;
+    margin: 20px auto !important;
+    width: 320px !important;
+    max-width: 320px !important;
+}
+
+.multimedia img, 
+.multimedia video {
+    width: 300px !important;
+    height: 200px !important;
+    max-width: 300px !important;
+    object-fit: cover !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+    display: block !important;
+}
