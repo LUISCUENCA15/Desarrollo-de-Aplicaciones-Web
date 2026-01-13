@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 6 - Formulario Validación JS - Luis Cuenca</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>📝 Formulario Interactivo</h1>
+            <p class="subtitle">Tarea 6 - Luis Cuenca - Validaciones Dinámicas JavaScript</p>
+        </header>
+
+        <main class="form-container">
+            <form id="miFormulario" novalidate>
+                <!-- Nombre -->
+                <div class="form-group">
+                    <label for="nombre">👤 Nombre Completo <span class="min-char">(mín. 3 caracteres)</span></label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <span class="error-message" id="error-nombre"></span>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">📧 Correo Electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="error-email"></span>
+                </div>
+
+                <!-- Contraseña -->
+                <div class="form-group">
+                    <label for="password">🔒 Contraseña <span class="min-char">(mín. 8 chars + número + especial)</span></label>
+                    <input type="password" id="password" name="password" required>
+                    <span class="error-message" id="error-password"></span>
+                </div>
+
+                <!-- Confirmar Contraseña -->
+                <div class="form-group">
+                    <label for="confirmPassword">🔐 Confirmar Contraseña</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    <span class="error-message" id="error-confirm"></span>
+                </div>
+
+                <!-- Edad -->
+                <div class="form-group">
+                    <label for="edad">🎂 Edad <span class="min-char">(mayor o igual 18 años)</span></label>
+                    <input type="number" id="edad" name="edad" min="18" required>
+                    <span class="error-message" id="error-edad"></span>
+                </div>
+
+                <!-- Botones -->
+                <div class="button-group">
+                    <button type="submit" id="submitBtn" class="btn btn-success" disabled>
+                        ✅ Enviar Formulario
+                    </button>
+                    <button type="button" id="resetBtn" class="btn btn-secondary">
+                        🔄 Reiniciar
+                    </button>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
