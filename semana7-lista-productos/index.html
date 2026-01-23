@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 7 - Lista Dinámica Productos - Luis Cuenca</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: #f5f5f5;
+        }
+        .header {
+            text-align: center;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+        }
+        .add-producto {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        .input-group {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        input {
+            flex: 1;
+            padding: 0.8rem;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+        input:focus {
+            border-color: #4facfe;
+            outline: none;
+        }
+        button {
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            background: #4facfe;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #3d94e6;
+        }
+        .productos-lista {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .producto-item {
+            background: #f8f9fa;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid #4facfe;
+        }
+        .producto-nombre {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 0.3rem;
+        }
+        .producto-precio {
+            color: #28a745;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .producto-desc {
+            color: #666;
+            line-height: 1.5;
+        }
+        .contador {
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        @media (max-width: 600px) {
+            .input-group {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🛒 Lista Dinámica de Productos</h1>
+        <p>Tarea 7 - Luis Cuenca - Plantillas JavaScript</p>
+    </div>
+
+    <div class="add-producto">
+        <h2>➕ Agregar Nuevo Producto</h2>
+        <div class="input-group">
+            <input type="text" id="nombreProducto" placeholder="Nombre del producto">
+            <input type="number" id="precioProducto" placeholder="Precio (ej: 29.99)" step="0.01">
+            <input type="text" id="descProducto" placeholder="Descripción breve">
+            <button onclick="agregarProducto()">Agregar Producto</button>
+        </div>
+    </div>
+
+    <div class="productos-lista">
+        <div class="contador" id="contadorProductos">Total: 0 productos</div>
+        <ul id="listaProductos">
+            <!-- Productos se generan con JS -->
+        </ul>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
